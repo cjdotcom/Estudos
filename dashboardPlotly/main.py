@@ -34,7 +34,7 @@ app.layout = html.Div(children=[
     Output('vendas', 'figure'), #Mostra a informação filtrada
     Input('listaLojas', 'value') #seleciona a informação a ser filtrada
 ) 
-# def update(value): #Função que modifica o grafico pelo filtro de lojas
+def update(value): #Função que modifica o grafico pelo filtro de lojas
     if value == 'Todos':
         fig = px.box(df, x="Produto", y="Quantidade", color="ID Loja") #caso seja tipo 'bar', usar o barmode='group'.
     else:
