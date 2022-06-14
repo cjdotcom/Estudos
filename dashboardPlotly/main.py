@@ -18,8 +18,7 @@ app.layout = html.Div(children=[
     html.H2(children='Grafico com o faturamento de todos os produtos separados por loja.'),
     html.Div(children='''
         Obs: Esse grafico mostra a quantidade de produtos vendidos e não o faturamento.
-    '''), 
-    #html.Div(id='texto'),
+    '''),
 
     #aqui termina a parte de layout
     dcc.Dropdown(op, value='Todos', id='listaLojas'),
