@@ -11,7 +11,7 @@ df = pd.read_excel('Vendas.xlsx') #database
 fig = px.box(df, x="Produto", y="Quantidade", color="ID Loja") #grafico
 
 op = list(df['ID Loja'].unique()) #lista de lojas da dropdown
-op.append('Todos')
+op.insert(0, 'Todos')
 
 app.layout = html.Div(children=[
     html.H1(children='Faturamento das Lojas'),
