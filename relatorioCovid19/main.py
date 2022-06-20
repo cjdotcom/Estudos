@@ -13,7 +13,7 @@ filtro_paises = list(df['Country/Region'].unique())
 filtro_paises.insert(0, 'Todos os Países')
 
 app.layout = html.Div(children=[
-    html.H1(children='Casos de COVID-19 por País'),
+    html.H1(children='Casos de COVID-19'),
     html.H2(children='Grafico com quantidade de casos de covid-19 em 08/2020'),
     html.Div(children=[
         dcc.Dropdown(filtro_paises, value='Todos os Países', id='listaPaises'),
